@@ -3,9 +3,7 @@ def count_prime_number(lower: int, upper: int):
     lower = max(2, lower)
     cnt = upper - lower  # range
     for i in range(lower, upper):
-        print(f'{i=}')
         for j in range(2, i // 2 + 1):
-            print(f'{j=}')
             if i % j == 0:  # prime number(소수)가 아님
                 cnt -= 1
                 break
